@@ -20,8 +20,8 @@ This project aims to analyze the bank-customers-churn dataset available on Kaggl
 - Encode categorical features to numerical values, as the selected algorithm (XGBoost) cannot handle categorical values by itself.
 - Check distribution of label classes, and discovered that labels were imbalanced. Implemented ADASYN to oversample the minority class.
 - Split the dataset into training and testing sets with a 75/25 split.
-- The XGBoost classifier is then trained on the training set, with initial parameters, and is used to make predictions on the test set. The predictions are compared and evaluated with the actual test set labels to calculate the accuracy and root mean squared error (RMSE).
-- Apply hyperparameter tuning using Random Search on some candidate parameter grid, with a 5-fold cross-validation for 100 iterations.
+- The XGBoost classifier is then trained on the training set, with initial parameters, and is used to make predictions on the test set. The predictions are compared and evaluated with the actual test set labels to calculate the accuracy and root mean squared error (RMSE). Achieved 85.3% accuracy with RMSE of 0.3828.
+- Apply hyperparameter tuning using Random Search on some candidate parameter grid, with a 5-fold cross-validation for 100 iterations. Improved performance to 87.6% accuracy with 0.3524 RMSE.
 
 # Dataset 
 Santosh Kumar. 2018. "Bank Customers Churn", version 1. Retrieved 11/08/2022 from https://www.kaggle.com/datasets/santoshd3/bank-customers.
